@@ -1,0 +1,47 @@
+.tns-outer
+   width: 85%
+   margin: 0 auto
+
+.control
+   list-style: none
+
+.tns-item img
+   height: 100%
+   width: 100%
+   object-fit: cover
+
+.control li
+   display: flex
+   justify-content: center
+   align-items: center
+   position: absolute
+   top: 50%
+   transform: translateY(50%)
+   color: $info
+   cursor: pointer
+   z-index: 10
+
+   &:hover
+      background: $grey-light
+      color: $white
+
+   &.prev
+      left: 1rem
+
+   &.next
+      right: 1rem
+
+.tns-nav
+   text-align: center
+   margin: 1rem 0 0 0
+
+   & button
+      height: 13px
+      width: 13px
+      background-color: $grey-light
+      border: none
+      margin: 0 7px
+      border-radius: 50%
+
+   & .tns-nav-active
+      background-color: $info

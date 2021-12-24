@@ -1,0 +1,44 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "last 2 chrome versions",
+    "last 2 firefox versions",
+    "last 2 ios versions"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "@types/animejs": "^3.1.4",
+    "animejs": "^3.2.1",
+    "autoprefixer": "^9.7.3",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "core-js": "^3.4.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.3",
+    "webpack": "^5.59.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "gulp-htmlmin": "^5.0.1",
+    "tiny-slider": "^2.9.4"
+  }
+}

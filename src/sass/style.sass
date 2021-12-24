@@ -1,0 +1,103 @@
+@charset "utf-8"
+/*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
+@import "utilities/_all"
+@import "base/_all"
+@import "elements/_all"
+@import "form/_all"
+@import "components/_all"
+@import "grid/_all"
+@import "helpers/_all"
+@import "layout/_all"
+
+a.navbar-item.refer
+    &:focus-within
+        text-decoration: none
+        color: #4a4a4a
+
+.hero
+    height: 953px
+    background: url(img/background-hero.png) center center / cover no-repeat
+.hero-body
+    height: 100%
+.card
+    overflow: hidden
+    &-wrap
+        height: 428px
+        padding: 2.2rem
+        background-color: rgba(0, 0, 0, .6)
+        border-radius: 10px
+    &-inner
+        padding: 4rem 1rem
+        background-color: $white-ter
+        border-radius: 10px
+    &-back
+        border-radius: 10px
+        overflow: hidden
+        .image
+            height: 0
+            padding-top: 105%
+            position: relative
+            display: block
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                max-height: 100%
+                max-width: 100%
+
+#tabs1 .tab-content
+    overflow: hidden
+
+.recall
+    background: url(img/background-reviews.svg) center center / cover no-repeat
+
+.footer
+    background-color: #050C26
+    a > p
+        &:hover
+            color: $cyan !important
+
+.modal-content
+    border-radius: 0.5rem
+
+.modal .delete
+    position: absolute
+    top: 1.5rem
+    right: 1.5rem
+
+#modal_thanks .modal-content, #modal_thanks1 .modal-content
+    max-width: 320px
+
+.custom-btn
+    overflow: hidden
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 2.5rem
+        height: 100%
+        background: $grey-light
+        transform: translateX(-0.5em) skewX(-45deg)
+        animation: moveLight 3s ease-in-out 0.05s infinite
+        z-index: 100
+
+@keyframes moveLight
+    0%
+        left: -50%
+        margin-left: 0
+    30%
+        left: 100%
+        margin-left: 3.5rem
+
+    100%
+        left: 100%
+        margin-left: 3.5rem
+
+.up
+    margin-bottom: 0 !important
+    position: fixed
+    font-size: 3.5rem
+    bottom: 1rem
+    right: 3rem
